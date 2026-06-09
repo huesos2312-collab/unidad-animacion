@@ -35,8 +35,8 @@
     --surface: #1a1a22;
     --surface2: #22222e;
     --border: #2e2e3e;
-    --accent: #e8403a;
-    --accent2: #ff6b35;
+    --accent: #0046dc;
+    --accent2: #0046dc;
     --text: #f0f0f5;
     --text2: #9090a8;
     --green: #2ec27e;
@@ -69,7 +69,7 @@
     font-family: inherit; padding: 4px 0; display: flex; align-items: center; gap: 6px;
   }
   .pdf-print-btn {
-    background: #e8403a; border: none; border-radius: 8px;
+    background: #0046dc; border: none; border-radius: 8px;
     color: white; font-size: 13px; font-weight: 700;
     padding: 8px 16px; cursor: pointer; font-family: inherit;
   }
@@ -257,7 +257,7 @@
   .tag-green { background: rgba(46,194,126,0.15); color: var(--green); }
   .tag-yellow { background: rgba(245,197,66,0.15); color: var(--yellow); }
   .tag-blue { background: rgba(74,158,255,0.15); color: var(--blue); }
-  .tag-red { background: rgba(232,64,58,0.15); color: var(--accent); }
+  .tag-red { background: rgba(0,70,220,0.15); color: var(--accent); }
   .tag-purple { background: rgba(168,85,247,0.15); color: var(--purple); }
 
   /* Montaje timeline */
@@ -367,8 +367,8 @@
   .meet-linked-badge {
     display: inline-flex; align-items: center; gap: 5px;
     font-size: 11px; font-weight: 600; padding: 2px 8px;
-    border-radius: 20px; background: rgba(232,64,58,0.12);
-    color: var(--accent); border: 1px solid rgba(232,64,58,0.25);
+    border-radius: 20px; background: rgba(0,70,220,0.12);
+    color: var(--accent); border: 1px solid rgba(0,70,220,0.25);
     margin-bottom: 6px;
   }
 
@@ -423,7 +423,7 @@
     cursor: pointer; font-family: inherit; text-align: left;
     transition: all 0.15s;
   }
-  .show-assign-btn.active { background: rgba(232,64,58,0.12); border-color: var(--accent); color: var(--text); }
+  .show-assign-btn.active { background: rgba(0,70,220,0.12); border-color: var(--accent); color: var(--text); }
 
   /* Person color swatch */
   .person-color-swatch {
@@ -933,7 +933,7 @@
     transition: background 0.2s, color 0.2s, border-color 0.2s;
     font-family: inherit;
   }
-  .del-card-btn:hover, .del-card-btn:active { background: rgba(232,64,58,0.18); color: var(--accent); border-color: var(--accent); }
+  .del-card-btn:hover, .del-card-btn:active { background: rgba(0,70,220,0.18); color: var(--accent); border-color: var(--accent); }
 
   /* Edit panel */
   .edit-panel {
@@ -1357,12 +1357,12 @@
       <div class="edit-form-group">
         <label class="edit-form-label">Participantes</label>
         <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:6px;" id="meet-people-btns">
-          <button class="tl-person-btn" data-person="M" style="--pc:#e8403a;" onclick="toggleMeetPerson(this)">M</button>
+          <button class="tl-person-btn" data-person="M" style="--pc:#0046dc;" onclick="toggleMeetPerson(this)">M</button>
           <button class="tl-person-btn" data-person="L" style="--pc:#a855f7;" onclick="toggleMeetPerson(this)">L</button>
           <button class="tl-person-btn" data-person="R" style="--pc:#4a9eff;" onclick="toggleMeetPerson(this)">R</button>
           <button class="tl-person-btn" data-person="S" style="--pc:#2ec27e;" onclick="toggleMeetPerson(this)">S</button>
           <button class="tl-person-btn" data-person="P" style="--pc:#f5c542;" onclick="toggleMeetPerson(this)">P</button>
-          <button class="tl-person-btn" data-person="F" style="--pc:#ff6b35;" onclick="toggleMeetPerson(this)">F</button>
+          <button class="tl-person-btn" data-person="F" style="--pc:#0046dc;" onclick="toggleMeetPerson(this)">F</button>
         </div>
         <div style="font-size:11px; color:var(--text2); margin-top:8px;">M = Martín · L = Laura · R = Rodrigo · S = Santiago · P = Paula · F = Federico</div>
       </div>
@@ -1686,12 +1686,12 @@
       <div class="edit-form-group">
         <label class="edit-form-label">Equipo asignado</label>
         <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:6px;">
-          <button class="tl-person-btn" data-person="M" style="--pc:#e8403a;" onclick="toggleTlPerson(this)">M</button>
+          <button class="tl-person-btn" data-person="M" style="--pc:#0046dc;" onclick="toggleTlPerson(this)">M</button>
           <button class="tl-person-btn" data-person="L" style="--pc:#a855f7;" onclick="toggleTlPerson(this)">L</button>
           <button class="tl-person-btn" data-person="R" style="--pc:#4a9eff;" onclick="toggleTlPerson(this)">R</button>
           <button class="tl-person-btn" data-person="S" style="--pc:#2ec27e;" onclick="toggleTlPerson(this)">S</button>
           <button class="tl-person-btn" data-person="P" style="--pc:#f5c542;" onclick="toggleTlPerson(this)">P</button>
-          <button class="tl-person-btn" data-person="F" style="--pc:#ff6b35;" onclick="toggleTlPerson(this)">F</button>
+          <button class="tl-person-btn" data-person="F" style="--pc:#0046dc;" onclick="toggleTlPerson(this)">F</button>
         </div>
         <div style="font-size:11px; color:var(--text2); margin-top:8px;">M = Martín · L = Laura · R = Rodrigo · S = Santiago · P = Paula · F = Federico</div>
       </div>
@@ -2271,12 +2271,12 @@ const TL_COLORS = {
   red:    'var(--accent)',
 };
 const TEAM = {
-  M: { name: 'Martín',   color: '#e8403a' },
+  M: { name: 'Martín',   color: '#0046dc' },
   L: { name: 'Laura',    color: '#a855f7' },
   R: { name: 'Rodrigo',  color: '#4a9eff' },
   S: { name: 'Santiago', color: '#2ec27e' },
   P: { name: 'Paula',    color: '#f5c542' },
-  F: { name: 'Federico', color: '#ff6b35' },
+  F: { name: 'Federico', color: '#0046dc' },
 };
 
 let montajesData = {
@@ -2712,7 +2712,7 @@ async function loadUserRole(uid) {
 }
 
 // ── Team data store ───────────────────────────────────────
-const PERSON_COLORS = ['#e8403a','#a855f7','#4a9eff','#2ec27e','#f5c542','#ff6b35'];
+const PERSON_COLORS = ['#0046dc','#a855f7','#4a9eff','#2ec27e','#f5c542','#0046dc'];
 const STATUS_INFO = {
   online: { label: 'Disponible',    color: 'var(--green)',  next: 'busy'   },
   busy:   { label: 'Ocupado',       color: 'var(--yellow)', next: 'off'    },
@@ -2721,7 +2721,7 @@ const STATUS_INFO = {
 let teamData = {
   sections: [
     { id: 'produccion', label: 'Producción', members: [
-      { id:'tm-m', letter:'M', name:'Martín Toledo',   role:'Director de Producción',        colorHex:'#e8403a', status:'online', showIds:['show1','show3'],        showRoles:{'show1':'Dirección general','show3':'Dirección general'},        email:'martin@producciones.uy',  phone:'091234567' },
+      { id:'tm-m', letter:'M', name:'Martín Toledo',   role:'Director de Producción',        colorHex:'#0046dc', status:'online', showIds:['show1','show3'],        showRoles:{'show1':'Dirección general','show3':'Dirección general'},        email:'martin@producciones.uy',  phone:'091234567' },
       { id:'tm-l', letter:'L', name:'Laura Méndez',    role:'Coordinadora de Producción',    colorHex:'#a855f7', status:'online', showIds:['show1','show2'],        showRoles:{'show1':'Coordinación','show2':'Coordinación'},               email:'laura@producciones.uy',   phone:'092345678' },
     ]},
     { id: 'tecnico', label: 'Técnico', members: [
@@ -2730,7 +2730,7 @@ let teamData = {
     ]},
     { id: 'logistica', label: 'Logística & Comunicación', members: [
       { id:'tm-p', letter:'P', name:'Paula Acosta',    role:'Logística y Riders',           colorHex:'#f5c542', status:'online', showIds:['show1','show2','show3'], showRoles:{'show1':'Logística','show2':'Logística','show3':'Logística'},  email:'paula@producciones.uy',   phone:'095678901' },
-      { id:'tm-f', letter:'F', name:'Federico Garín',  role:'Iluminación y Video',          colorHex:'#ff6b35', status:'busy',   showIds:['show2','show3'],        showRoles:{'show2':'Iluminación','show3':'Iluminación y video'},         email:'federico@lightdesign.uy', phone:'096789012' },
+      { id:'tm-f', letter:'F', name:'Federico Garín',  role:'Iluminación y Video',          colorHex:'#0046dc', status:'busy',   showIds:['show2','show3'],        showRoles:{'show2':'Iluminación','show3':'Iluminación y video'},         email:'federico@lightdesign.uy', phone:'096789012' },
     ]},
   ]
 };
@@ -2862,7 +2862,7 @@ function savePersonEdit() {
   if (!letter) { document.getElementById('person-edit-letter').focus(); return; }
   const email     = document.getElementById('person-edit-email').value.trim();
   const phone     = document.getElementById('person-edit-phone').value.trim();
-  const colorHex  = document.querySelector('.person-color-swatch.selected')?.dataset.hex || '#e8403a';
+  const colorHex  = document.querySelector('.person-color-swatch.selected')?.dataset.hex || '#0046dc';
   const sectionId = document.getElementById('person-edit-section').value;
 
   // Collect assigned shows and per-show roles
@@ -2907,7 +2907,7 @@ function deleteMember(memberId) {
 }
 
 // ── PDF Export ───────────────────────────────────────────
-const COLOR_NAMES = { blue:'#4a9eff', purple:'#a855f7', green:'#2ec27e', yellow:'#f5c542', orange:'#ff6b35', red:'#e8403a' };
+const COLOR_NAMES = { blue:'#4a9eff', purple:'#a855f7', green:'#2ec27e', yellow:'#f5c542', orange:'#0046dc', red:'#0046dc' };
 
 function downloadMontagePDF(montajeId) {
   const show = montajesData.shows[montajeId];
@@ -3341,7 +3341,7 @@ function startSync() {
 // ── Novedades data store ──────────────────────────────────
 let novedadesData = {};
 const NOVEDAD_COLORS = {
-  accent:  { bg:'rgba(232,64,58,0.15)',  text:'#e8403a' },
+  accent:  { bg:'rgba(0,70,220,0.15)',  text:'#0046dc' },
   blue:    { bg:'rgba(74,158,255,0.15)', text:'#4a9eff' },
   purple:  { bg:'rgba(168,85,247,0.15)', text:'#a855f7' },
   green:   { bg:'rgba(46,194,126,0.15)', text:'#2ec27e' },
